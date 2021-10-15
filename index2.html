@@ -1,41 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style type="text/css">
-    .redfont{
-        color: red;
-    }
-    .largefont{
-        font-size: 50px;
-    }
-    #oneid{
-        color: brown;
-        font-size: 100px;
-    }
-    #sectionid{
-        color: brown;
-        font-size: 100px;
-    }
+<meta charset="utf-8">
+<title>The Box Model</title>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    </style>
+body {
+  background-color: gray;
+}
+
+#box {
+  background-color: blue;
+  padding: 10px;
+  border: 5px solid black;
+  width: 300px;
+  height: 50px;
+  margin-top: 50px;
+  overflow: auto;
+}
+#content {
+  background-color: #90EE90; /* green */
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+</style>
 </head>
 <body>
-    <h2> My Third Lab CSS </h2>
-    <p class="redfont"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit odio, veritatis dolores sapiente, consequuntur 
-        debitis minus doloremque incidunt consequatur amet, magni dolorum suscipit! Officiis quas cumque voluptates maiores! Aliquid, suscipit. </p>
-    <p1 class="largefont">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos exercitationem sequi vel sed, voluptatum accusamus
-         fugit fuga quod magni pariatur, explicabo laborum impedit quae quidem eligendi expedita officiis nemo itaque?</p1>
-<div id=oneid classs="redfont" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore non quisquam perspiciatis. Quo suscipit sed obcaecati temporibus 
-    exercitationem minus repellendus hic excepturi quod, eius animi soluta deserunt perspiciatis, sequi natus?</div>
-        </body>
-        <div id="oneid secondid">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore non quisquam perspiciatis.
 
-        </div>
+<h1>Box Model</h1>
+
+<div id="box">
+  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis. 
+  </div>
+</div>
 
 
+</body>
+</html>
+--------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Background</title>
+<style>
+#bg {
+  width: 500px;
+  height: 500px;
+  background: url('yaakov.png') no-repeat top center;
+  background-color: blue;
+}
+
+
+</style>
+</head>
+<body>
+<div id="bg">Background properties are fun!</div>
+</body>
+</html>
+----------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Two Column Design</title>
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  /*background-color: #00FFFF;*/
+}
+p {
+  width: 50%;
+  /*border: 1px solid black;*/
+  float: left;
+  padding: 10px;
+}
+
+#p1 {
+  /*background-color: #A52A2A;*/
+}
+#p2 {
+  /*background-color: #DEB887;*/
+}
+
+section {
+  clear: left;
+}
+
+</style>
+</head>
+<body>
+<h1>Two Column Design</h1>
+
+<div>
+  <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia distinctio aliquid cupiditate perferendis fuga, sit quasi alias vero sunt non, ratione earum dolores nihil! Consequuntur pariatur totam incidunt soluta expedita.</p>
+  <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta beatae voluptatibus veniam placeat iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, provident a ea! Nulla, minima.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius nemo vitae, cupiditate odio magnam reprehenderit esse eum reiciendis repellendus incidunt sequi! Autem, laudantium, accusamus. Doloribus tempora alias minima laborum, provident!</p>
+  <section>This is regular content continuing after the the paragraph boxes.</section>
+</div>
+
+
+</body>
 </html>
