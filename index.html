@@ -1,47 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>The Box Model</title>
-<style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>how to make website using bootstrap</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-body {
-  background-color: gray;
-}
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-#box {
-  background-color: blue;
-  padding: 10px;
-  border: 5px solid black;
-  width: 300px;
-  height: 50px;
-  margin-top: 50px;
-  overflow: auto;
-}
-#content {
-  background-color: #90EE90; /* green */
-}
-
-h1 {
-  margin-bottom: 30px;
-}
-
-</style>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+    
 
-<h1>Box Model</h1>
+    <header class="header">
+        <nav class="navbar navbar-style">
+            <div class="navbar-header">
+                <div class="container">
+                    <button class="navbar-toggle" data-toggle="collapse" data-targer="#micon">
+                        <span class="icob-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class=:icon-bar></span>
+                    </button>
+                    <a href="icons8-puzzle-30.png"></a>
+                    <div>
 
-<div id="box">
-  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit error quis ab perspiciatis eos inventore recusandae iste itaque numquam facilis, tenetur. Doloribus officiis quae facilis, nisi, ex similique. Animi, perferendis. 
-  </div>
-</div>
+                    </div>
+                    <ul class=" nav navbar-nav navbar-right" id=micon>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
 
+                    </ul>
+                    </div>
+                </nav>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h1>WEb Development</h1>
+                            <p>Create a beautiful responsive website</p>
+                            <p>Learn WEb Development</p>
+                            <a class="btn btn-first" href="">Live Video</a>
+                            <a class="btn btn-second" href="">Subscribe</a>
+                        </div>
+                        <div class="col-sm-6">
+                            <img src="cofee.jpg" alt="" class="img-responsive">
+                        </div>
+                    </div>
 
+                </div>
+                </div>
+            </div>
+
+    </header>
 </body>
 </html>
